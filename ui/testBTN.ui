@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <layout class="QHBoxLayout" name="horizontalLayout_30">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_31">
+      <item>
+       <spacer name="horizontalSpacer_52">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_check">
+        <property name="text">
+         <string>확인</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>186</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_24">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_16">
+      <item>
+       <widget class="QLabel" name="bookingDate">
+        <property name="text">
+         <string>예약 날짜</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dateWidget">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2021</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy . MM . dd</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_41">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>41</width>
+        <height>22</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <layout class="QVBoxLayout" name="verticalLayout_17">
+    <item>
+     <widget class="QLabel" name="label_bookingTime">
+      <property name="text">
+       <string>예약 시간</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_26">
+      <item>
+       <widget class="QTimeEdit" name="startTime">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="wrapping">
+         <bool>false</bool>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>10</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2000</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+        <property name="displayFormat">
+         <string>h:mm AP</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_tilde">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>~</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTimeEdit" name="endTime">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>3</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2000</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+        <property name="displayFormat">
+         <string>h:mm AP</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_42">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <layout class="QVBoxLayout" name="verticalLayout_18">
+    <item>
+     <widget class="QLabel" name="bookingCourse">
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>예약 코스</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_27">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_course1">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>코스 1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_44">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="course1">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>햇님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>달님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>별님</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_45">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>50</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_28">
+      <item>
+       <spacer name="horizontalSpacer_46">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_course2">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>코스 2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_47">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="course2">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>햇님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>달님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>별님</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_48">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>50</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_29">
+      <item>
+       <spacer name="horizontalSpacer_49">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_course3">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>코스 3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_50">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="course3">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>햇님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>달님</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>별님</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_51">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>50</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>50</y>
+     <width>67</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>1월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11월</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12월</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>50</y>
+     <width>67</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>1일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>17일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>18일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>21일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>22일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>23일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>24일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>25일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>26일</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>67</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>2021년</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2022년</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>90</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>년</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>90</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>월</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>90</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>일</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_3">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
