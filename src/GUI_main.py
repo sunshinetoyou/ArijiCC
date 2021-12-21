@@ -1,8 +1,8 @@
 import sys
-import os
-from PySide2 import QtUiTools, QtGui
+from PySide2 import QtUiTools
 from PySide2.QtWidgets import QApplication, QMainWindow
 from GUI_calendar import CalendarGUI
+
 
 class MainGUI(QMainWindow):
     def __init__(self):
@@ -11,8 +11,8 @@ class MainGUI(QMainWindow):
         self.UI_set = QtUiTools.QUiLoader().load("../ui/main.ui")
         self.setupUI()
 
+    # setDateRange 매서드로 qdateEdit 데이터 검사
     def setupUI(self):
-
         # 달력창 띄우기
         self.UI_set.cal_btn_1.clicked.connect(self.openCalendar)
         self.UI_set.cal_btn_2.clicked.connect(self.openCalendar)
@@ -25,10 +25,12 @@ class MainGUI(QMainWindow):
         self.show()
 
     def openCalendar(self):
-        dialog = CalendarGUI(self)
-        if dialog.exec_():
-            print(dialog.getDate())
+        dialog_cal = CalendarGUI(self)
+
+        if dialog_cal.exec_():
+            print(dialog_cal.getDate())
         else:
+            print("close")
             
 
 if __name__ == '__main__':
