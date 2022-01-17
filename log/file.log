@@ -1,0 +1,22 @@
+INFO 2022-01-17 17:33:52,520 - openACalendar : 그룹A 달력 창 띄우기
+INFO 2022-01-17 17:34:01,417 - checkData : 데이터 유효성 검사 시작
+INFO 2022-01-17 17:34:01,423 - checkLogic : DataA 데이터 유효성 검사 통과
+INFO 2022-01-17 17:34:04,305 - checkLogic : DataA 데이터 유효성 검사 통과
+INFO 2022-01-17 17:34:04,310 - startBooking : 예약 시작 전 데이터 유효성 검사 통과
+INFO 2022-01-17 17:34:04,310 - startBooking : 예약 시작
+INFO 2022-01-17 17:34:04,312 - startDriver : driver 실행
+INFO 2022-01-17 17:34:06,551 - ArijiLogin : 아리지cc 로그인
+INFO 2022-01-17 17:34:10,516 - pickDateByhomePage : 달력창으로 이동 & 날짜 선택( 홈페이지의 달력 )
+INFO 2022-01-17 17:34:11,404 - findCourse : 코스 선택 & 예약 버튼 누르기
+INFO 2022-01-17 17:34:11,568 - finishBooking : 완료 -> 창 초록색
+INFO 2022-01-17 17:42:53,554 - openACalendar : 그룹A 달력 창 띄우기
+INFO 2022-01-17 17:42:56,561 - checkData : 데이터 유효성 검사 시작
+INFO 2022-01-17 17:42:56,562 - checkLogic : DataA 데이터 유효성 검사 통과
+INFO 2022-01-17 17:42:57,497 - checkLogic : DataA 데이터 유효성 검사 통과
+INFO 2022-01-17 17:42:57,502 - startBooking : 예약 시작 전 데이터 유효성 검사 통과
+INFO 2022-01-17 17:42:57,502 - startBooking : 예약 시작
+INFO 2022-01-17 17:42:57,504 - startDriver : driver 실행
+INFO 2022-01-17 17:42:59,701 - ArijiLogin : 아리지cc 로그인
+INFO 2022-01-17 17:43:03,428 - pickDateByhomePage : 달력창으로 이동 & 날짜 선택( 홈페이지의 달력 )
+INFO 2022-01-17 17:43:04,375 - findCourse : 코스 선택 & 예약 버튼 누르기
+INFO 2022-01-17 17:43:04,527 - finishBooking : 완료 -> 창 초록색
